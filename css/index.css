@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  background-color: #eee;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  position: relative; /* Буде корисно для tooltip */
+}
+
+.item img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.like-btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.like-btn:hover {
+  background-color: #45a049;
+}
+
+.like-btn.checked {
+  background-color: #1e7623;
+}
+
+.counter {
+  margin-top: 20px;
+  font-size: 18px;
+}
